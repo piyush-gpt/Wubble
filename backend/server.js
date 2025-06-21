@@ -36,7 +36,7 @@ const sampleTracks = [
     title: "Sunny Day Vibes",
     mood: "Happy",
     genre: "Pop",
-    url: "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav",
+    url: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
     duration: "2:30"
   },
   {
@@ -44,7 +44,7 @@ const sampleTracks = [
     title: "Midnight Dreams",
     mood: "Chill",
     genre: "Lo-fi",
-    url: "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav",
+    url: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
     duration: "3:15"
   },
   {
@@ -52,7 +52,7 @@ const sampleTracks = [
     title: "Electric Pulse",
     mood: "Energetic",
     genre: "EDM",
-    url: "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav",
+    url: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
     duration: "2:45"
   },
   {
@@ -60,7 +60,7 @@ const sampleTracks = [
     title: "Melancholy Echo",
     mood: "Sad",
     genre: "Cinematic",
-    url: "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav",
+    url: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
     duration: "4:20"
   },
   {
@@ -68,7 +68,7 @@ const sampleTracks = [
     title: "Dance Floor Heat",
     mood: "Energetic",
     genre: "Pop",
-    url: "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav",
+    url: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
     duration: "2:55"
   },
   {
@@ -76,7 +76,7 @@ const sampleTracks = [
     title: "Cozy Evening",
     mood: "Chill",
     genre: "Lo-fi",
-    url: "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav",
+    url: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
     duration: "3:30"
   },
   {
@@ -84,7 +84,7 @@ const sampleTracks = [
     title: "Epic Journey",
     mood: "Energetic",
     genre: "Cinematic",
-    url: "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav",
+    url: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
     duration: "5:10"
   },
   {
@@ -92,7 +92,7 @@ const sampleTracks = [
     title: "Digital Waves",
     mood: "Happy",
     genre: "EDM",
-    url: "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav",
+    url: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3",
     duration: "3:05"
   }
 ];
