@@ -87,17 +87,6 @@ A single-page web application that mimics Wubble's user flow for generating AI m
 5. **Toggle Dark Mode**: Use the moon/sun icon in the header to switch themes
 6. **View Recent Tracks**: Scroll down to see your recently generated tracks
 
-## 🎵 Sample Tracks
-
-The application includes 8 sample tracks with different mood/genre combinations:
-- Sunny Day Vibes (Happy, Pop)
-- Midnight Dreams (Chill, Lo-fi)
-- Electric Pulse (Energetic, EDM)
-- Melancholy Echo (Sad, Cinematic)
-- Dance Floor Heat (Energetic, Pop)
-- Cozy Evening (Chill, Lo-fi)
-- Epic Journey (Energetic, Cinematic)
-- Digital Waves (Happy, EDM)
 
 ## 🔧 API Endpoints
 
