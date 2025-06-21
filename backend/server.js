@@ -99,11 +99,37 @@ const sampleTracks = [
 
 // Routes
 app.get('/api/moods', (req, res) => {
-  res.json(moods);
+  try {
+    res.json({
+      success: true,
+      data: moods,
+      count: moods.length
+    });
+  } catch (error) {
+    console.error('Error fetching moods:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to fetch moods',
+      code: 'MOODS_FETCH_ERROR'
+    });
+  }
 });
 
 app.get('/api/genres', (req, res) => {
-  res.json(genres);
+  try {
+    res.json({
+      success: true,
+      data: genres,
+      count: genres.length
+    });
+  } catch (error) {
+    console.error('Error fetching genres:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to fetch genres',
+      code: 'GENRES_FETCH_ERROR'
+    });
+  }
 });
 
 app.post('/api/generate-track', (req, res) => {
@@ -113,7 +139,7 @@ app.post('/api/generate-track', (req, res) => {
     // Filter tracks by mood and genre, or get random track if no match
     let filteredTracks = sampleTracks;
     
-    if (mood && genre) {
+    try{if (mood && genre) {
       filteredTracks = sampleTracks.filter(track => 
         track.mood.toLowerCase() === mood.toLowerCase() && 
         track.genre.toLowerCase() === genre.toLowerCase()
@@ -139,6 +165,14 @@ app.post('/api/generate-track', (req, res) => {
       success: true,
       track: randomTrack
     });
+  } catch (error) {
+    console.error('Error generating track:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to generate track',
+      code: 'GENERATE_TRACK_ERROR'
+    });
+  }
   }, 2000); // 2 second delay to simulate generation
 });
 
