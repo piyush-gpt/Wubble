@@ -83,8 +83,11 @@ const useStore = create(
             fetch(`${BACKEND_URL}/api/genres`),
           ]);
 
-          const moods = await moodsResponse.json();
-          const genres = await genresResponse.json();
+          const moodsData = await moodsResponse.json();
+          const genresData = await genresResponse.json();
+
+          const moods = moodsData.success ? moodsData.data : moodsData;
+          const genres = genresData.success ? genresData.data : genresData;
 
           set({ moods, genres });
         } catch (error) {
