@@ -13,7 +13,6 @@ export default defineConfig({
     },
   },
   define: {
-    // Make environment variables available to the client
     'process.env.VITE_BACKEND_URL': JSON.stringify(process.env.VITE_BACKEND_URL),
   },
 })

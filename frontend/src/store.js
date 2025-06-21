@@ -1,6 +1,8 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || '';
+
 const useStore = create(
   persist(
     (set, get) => ({
@@ -50,7 +52,7 @@ const useStore = create(
         set({ isLoading: true });
 
         try {
-          const response = await fetch('/api/generate-track', {
+          const response = await fetch(`${BACKEND_URL}/api/generate-track`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -77,8 +79,8 @@ const useStore = create(
       loadMoodsAndGenres: async () => {
         try {
           const [moodsResponse, genresResponse] = await Promise.all([
-            fetch('/api/moods'),
-            fetch('/api/genres'),
+            fetch(`${BACKEND_URL}/api/moods`),
+            fetch(`${BACKEND_URL}/api/genres`),
           ]);
 
           const moods = await moodsResponse.json();
